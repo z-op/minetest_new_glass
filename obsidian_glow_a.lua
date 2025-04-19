@@ -10,6 +10,7 @@ minetest.register_node("new_glass:super_steel_framed_obsidian_glass", {
   paramtype = "light",
   sunlight_propagates = true,
   palette = "unifieddyes_palette_extended.png",
+  paramtype2 = "color",
   airbrush_replacement_node = "new_glass:super_steel_framed_obsidian_glass_tinted",
   groups = {cracky = 3, oddly_breakable_by_hand = 3, ud_param2_colorable = 1},
   is_ground_content = false,
@@ -33,7 +34,7 @@ minetest.register_node("new_glass:super_steel_framed_obsidian_glass_tinted", {
   inventory_image = minetest.inventorycube("framedglass_glass_face_inv_static.png"),
   airbrush_replacement_node = "new_glass:super_steel_framed_obsidian_glass_tinted",
   is_ground_content = false,
-  use_texture_alpha = true,
+  use_texture_alpha = "blend",
   groups = {
     cracky = 3, oddly_breakable_by_hand = 3, ud_param2_colorable = 1,
     not_in_creative_inventory = 1
