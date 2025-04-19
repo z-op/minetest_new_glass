@@ -22,7 +22,7 @@ minetest.register_node("new_glass:smoked_glass", {
   palette = "unifieddyes_palette_extended.png",
   paramtype2 = "color",
   groups = {oddly_breakable_by_hand = 3},
-  use_texture_alpha = 180,
+  use_texture_alpha = "blend",
   sounds = default.node_sound_glass_defaults(),
   is_ground_content = false,
 })
@@ -39,7 +39,7 @@ minetest.register_node("new_glass:smoked_glass_tinted", {
   inventory_image = minetest.inventorycube("smoked_glass_white.png"),
   airbrush_replacement_node = "new_glass:smoked_glass_tinted",
   is_ground_content = false,
-  use_texture_alpha = 180,
+  use_texture_alpha = "blend",
   groups = {
     cracky = 3, oddly_breakable_by_hand = 3, ud_param2_colorable = 1,
     not_in_creative_inventory = 1
